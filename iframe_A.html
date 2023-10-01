@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            font-family: 'Lato', sans-serif;
+            background-image: linear-gradient(to right, #edd3e1, #e3cadf, #d6c3de, #c6bcdd, #b3b6dc, #a3b5dd, #92b5dd, #7fb5da, #6fb9d7, #62bdd1, #5dc0c7, #60c2ba);
+        }
+        
+        #name{
+            text-align: center;
+            text-decoration-line: underline;
+            color: white;
+            font-size: 30px;
+            margin: 0px;
+        }
+
+        #tab{
+            text-align: center;
+            position: relative;
+            display: block;
+            margin: 0px;
+        }
+
+        th, td, tr{
+            width: 235px;
+            height: 70px;
+        }
+
+        tr{
+            background-color: linen;
+        }
+
+        td:hover{
+            background-color: lightgray;
+        }
+
+        td{
+            border-radius: 0;
+            font-style: normal;
+            cursor: pointer;
+            padding: 5px;
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            font-size: 15px;
+}
+
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          width: 250px; height: auto;
+          background-color: lightcoral;
+          color: #fff;
+          text-align: center;
+          padding: 5px;
+          top: 50px;
+          left: -100px;
+          /* Position the tooltip */
+          position: absolute;
+          z-index: 1;
+        }
+
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div id="tab">
+        <table>
+            <tr>
+                <th>TIME</th>
+                <th>MONDAY</th>
+                <th>TUESDAY</th>
+                <th>WEDNESDAY</th>
+                <th>THRUSDAY</th>
+                <th>FRIDAY</th>
+                <th>SATURDAY</th>
+            </tr>
+
+            <tr>
+                <td>09:00 AM - 09:55AM</td>
+                <td rowspan="3"><div class="tooltip">Computer Lab<span class="tooltiptext"><p>Teacher: Mr. Anil B Desai/Mr. Deepak Rana</p><p>Duration: 3hr 05min</p><p>Subject Code: PCS151</p><p>Class Room: LAB-7</p></span></div></td>
+                <td rowspan="2"><div class="tooltip">Career Skills<span class="tooltiptext"><p>Teacher: Mr. Sushant Chamoli</p><p>Duration: 1hr 50min</p><p>Subject Code: CEC</p><p>Class Room: 501</p></span></div></td>
+                <td rowspan="2"><div class="tooltip">Pyhsics Lab(G2)<br>Workshop(G1)<span class="tooltiptext"><p>Teacher: Dr. Amit Raj(G1)/Mr. Rajesh Pant(G2)</p><p>Duration: 1hr 50min</p><p>Subject Code: PPH151(G1)/PME151(G2)</p><p>Class Room: 501</p></span></div></td>
+                <td rowspan="2"><div class="tooltip">Workshop(G1)<br>Pyhsics Lab(G2)<span class="tooltiptext"><p>Teacher: Mr. Rajesh Pant(G2)/Ms. Vaishali Dogra(G2)</p><p>Duration: 1hr 50min</p><p>Subject Code: PPH151(G1)/PME151(G2)</p><p>Class Room: 501</p></span></div></td>
+                <td rowspan="2">Basic Electronc Engineering(G1)<br>Professional Communication Lab(G2)</td>
+                <td rowspan="2">Basic Electronic Engineering(G2)<br>Professional Communication Lab(G1)</td>
+            </tr>
+
+            <tr>
+                <td>9:55 AM - 10:50AM</td>
+            </tr>
+
+            <tr>
+                <td>11:10 AM - 12:00 PM</td>
+                <td>Fundamentals of  Computers</td>
+                <td>Workshop(G2)</td>
+                <td>Workshop(G1)</td>
+                <td>Fundamentals of Computer</td>
+                <td>Fundamentals of Computers</td>
+            </tr>
+
+            <tr>
+                <td>12:00 PM - 01:00PM</td>
+                <td>Senior Interaction</td>
+                <td>Professiona Communication</td>
+                <td>Engineering Mathematics</td>
+                <td>Professional Communication</td>
+                <td>Engineering Mathematics</td>
+                <td>Engineering Mathematics</td>
+            </tr>
+
+            <tr>
+                <td>01:00 PM - 01:55 PM</td>
+                <td colspan="6">Lunch</td>
+            </tr> 
+
+            <tr>
+                <td>01:55 PM - 02:50 PM</td>
+                <td>Professional Communication</td>
+                <td>Basic Electrical Engineering</td>
+                <td>Basic Electrical Engineering</td>
+                <td>Basic Electrical Engineering</td>
+                <td>Library</td>
+                <td>Free</td>
+            </tr>  
+
+            <tr>
+                <td>03:10 PM - 04:05 PM</td>
+                <td>Healthy Living and Fitness</td>
+                <td>Professional Communication</td>
+                <td>Entrepreneurship</td>
+                <td>Engineering Mathematics</td>
+                <td>Free</td>
+                <td>Free</td>
+            </tr>   
+
+            <tr>
+                <td>04:05 PM - 05:00 PM</td>
+                <td>Engineering Mathematics</td>
+                <td>Python/ML</td>
+                <td>Seminar</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>    
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                font-family: 'Lato', sans-serif;
+                font-size: 25px;
+                background: #e6fff7;
+            }
+            .tooltip {
+                position: relative;
+                display: inline-block;
+            }
+
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: 300px; height: auto;
+                background-color: #e6fff7;
+                color: black;
+                text-align: center;
+                padding: 0px;
+                top: -60px;
+                left: 380px;
+                /* Position the tooltip */
+                position: absolute;
+                z-index: 1;
+            }
+
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+            }
+        </style>
+    </head>
+    <body>
+        <ol>
+            <p>
+            <li>Mathematics:
+                <ul style="font-size: 20px;">
+                    <li><div class="tooltip">Higher Engineering Mathematics<span class="tooltiptext"><p style="padding: 5px; margin: 5px;"><img src="images/ramana.webp" width="auto" height="250px"></p><p style="padding: 0px; margin: 0px;">Writer: B. V. Ramana</p><p style="padding: 0px; margin: 0px;">ISBN: 9780070634190</p></span></div></li>
+                </ul>
+            </li>
+            </p>
+            <p>
+            <li>Basic Electrical Engineering:
+                <ul style="font-size: 20px;">
+                    <li><div class="tooltip">Basic Electrical Engineering Second Edition<span class="tooltiptext"><p style="padding: 5px; margin: 5px;"><img src="images/basic_electrical.jpg" width="auto" height="250px"></p><p style="padding: 0px; margin: 0px;">Writer: V N Mittal & Arvind Mittal</p><p style="padding: 0px; margin: 0px;">ISBN: 9780070593572</p></span></div></li>
+                </ul>
+            </li>
+            </p>
+            <p>
+            <li>Fundamental of Computer Science:
+                <ul style="font-size: 20px;">
+                    <li><div class="tooltip">Let Us C<span class="tooltiptext"><p style="padding: 5px; margin: 5px;"><img src="images/kanetkar.jpg" width="auto" height="250px"></p><p style="padding: 0px; margin: 0px;">Writer: Yashavant P. Kanetkar</p><p style="padding: 0px; margin: 0px;">ISBN: 8183331637</p></span></div></li>
+                    <li><div class="tooltip">Introduction to Computers<span class="tooltiptext"><p style="padding: 5px; margin: 5px;"><img src="images/norton.jpg" width="auto" height="250px"></p><p style="padding: 0px; margin: 0px;">Writer: Peter Norton</p><p style="padding: 0px; margin: 0px;">ISBN: 9780070671201</p></span></div></li>
+                </ul>
+            </li>
+            </p>
+            <p>
+            <li>Engineering Physics:
+                <ul style="font-size: 20px;">
+                    <li><div class="tooltip">Engineering Physics Volume 1<span class="tooltiptext"><p style="padding: 5px; margin: 5px;"><img src="images/gupta.jpg" width="auto" height="250px"></p><p style="padding: 0px; margin: 0px;">Writer: Dr. S K Gupta</p><p style="padding: 0px; margin: 0px;">ISBN: 818283130X</p></span></div></li>
+                </ul>
+            </li>
+            </p>
+        </ol>
+    </body>
+</html>

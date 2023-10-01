@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            font-family: 'Lato', sans-serif;
+            background-image: linear-gradient(to right, #edd3e1, #e3cadf, #d6c3de, #c6bcdd, #b3b6dc, #a3b5dd, #92b5dd, #7fb5da, #6fb9d7, #62bdd1, #5dc0c7, #60c2ba);
+        }
+        
+        #name{
+            text-align: center;
+            text-decoration-line: underline;
+            color: white;
+            font-size: 30px;
+            margin: 0px;
+            
+        }
+
+        #tab{    
+            text-align: center;
+            position: relative;
+            display: block;
+            margin: 0px;
+        }
+
+        th, td, tr{
+            width: 235px;
+            height: 70px;
+        }
+
+        tr{
+            background-color: linen;
+        }
+
+        td:hover{
+            background-color: lightgray;
+        }
+
+        td{
+            border-radius: 0;
+            font-style: normal;
+            cursor: pointer;
+            padding: 5px;
+        }
+        
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            font-size: 15px;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 250px; height: auto;
+            /*background-color: lightcoral;*/
+            background-color: rgb(111, 62, 224);
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            top: 50px;
+            left: -100px;
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }        
+    </style>	
+</head>    
+<body>
+    <div id="tab">
+        <table>
+            <tr>
+                <th>TIME</th>
+                <th>MONDAY</th>
+                <th>TUESDAY</th>
+                <th>WEDNESDAY</th>
+                <th>THRUSDAY</th>
+                <th>FRIDAY</th>
+                <th>SATURDAY</th>
+            </tr>
+            <tr>
+                <td>09:00 AM - 09:55AM</td>
+                <td><div class="tooltip">Electronics Engineering Theory<span class="tooltiptext"><p>Teacher: Mr. Prabhas</p><p>Duration: 55min</p><p>Subject Code: TEC101</p><p>Class Room: 507</p></span></div>
+                </td>
+                <td><div class="tooltip">Engineering Mathematics Theory<span class="tooltiptext"><p>Teacher: Dr. Neeraj Dhiman</p><p>Duration: 55min</p><p>Subject Code: TMA101</p><p>Class Room: 507</p></span></div></td>
+                <td><div class="tooltip">Engineering Mathematics Theory<span class="tooltiptext"><p>Teacher: Dr. Neeraj Dhiman</p><p>Duration: 55min</p><p>Subject Code: TMA101</p><p>Class Room: 306</p></span></div></td>
+                <td><div class="tooltip">Electronics Engineering Theory<span class="tooltiptext"><p>Teacher: Mr. Prabhas</p><p>Duration: 55min</p><p>Subject Code: TEC101</p><p>Class Room: 507</p></span></div>
+                </td>
+                <td><div class="tooltip">Electronics Engineering Theory<span class="tooltiptext"><p>Teacher: Mr. Prabhas</p><p>Duration: 55min</p><p>Subject Code: TEC101</p><p>Class Room: 507</p></span></div>
+                </td>
+                <td><div class="tooltip">Environmental Science Theory<span class="tooltiptext"><p>Teacher: Dr. Deepak Kolia</p><p>Duration: 55min</p><p>Subject Code: TEV101</p><p>Class Room: LT501</p></span></div>
+                </td>
+            </tr>
+            <tr>
+                <td>09:55 AM - 10:50 AM</td>
+                <td><div class="tooltip">Fundamentals of Computer Science<span class="tooltiptext"><p>Teacher: Mr. Ashish Garg</p><p>Duration: 55min</p><p>Subject Code: TCS101</p><p>Class Room: LT202</p></span></div>
+                </td>
+               <td><div class="tooltip">Professional Communication Theory<span class="tooltiptext"><p>Teacher: Dr. Vinay Devrani</p><p>Duration: 55min</p><p>Subject Code: THU101</p><p>Class Room: 507</p></span></div>
+                </td>
+                <td><div class="tooltip">Entrepreneurship<span class="tooltiptext"><p>Teacher: Mr. Rakshit Negi</p><p>Duration: 55min</p><p>CR: 306</p></span></div>
+                <td><div class="tooltip">Fundamentals of Computer Science<span class="tooltiptext"><p>Teacher: Mr. Ashish Garg</p><p>Duration: 55min</p><p>Subject Code: TCS101</p><p>Class Room: LT202</p></span></div>
+                </td>
+                <td><div class="tooltip">Fundamentals of Computer Science<span class="tooltiptext"><p>Teacher: Mr. Ashish Garg</p><p>Duration: 55min</p><p>Subject Code: TCS101</p><p>Class Room: LT202</p></span></div>
+                </td>
+                <td><div class="tooltip">Engineering Mathematics Theory<span class="tooltiptext"><p>Teacher: Dr. Neeraj Dhiman</p><p>Duration: 55min</p><p>Subject Code: TMA101</p><p>Class Room: Conference Room</p></span></div></td>
+            </tr>
+            <tr>
+                <td>11:10 AM - 12:00PM</td>
+                <td><div class="tooltip">Engineering Chemistry Theory<span class="tooltiptext"><p>Teacher: Dr. Kapil Ghai</p><p>Duration: 55min</p><p>Subject Code: TCH101</p><p>Class Room: 507</p></span></div>
+                </td>
+                <td><div class="tooltip">Engineering Chemistry Theory<span class="tooltiptext"><p>Teacher: Dr. Kapil Ghai</p><p>Duration: 55min</p><p>Subject Code: TCH101</p><p>Class Room: 507</p></span></div>
+                </td>
+                 <td><div class="tooltip">Environmental Science Theory<span class="tooltiptext"><p>Teacher: Dr. Deepak Kolia</p><p>Duration: 55min</p><p>Subject Code: TEV101</p><p>Class Room: 507</p></span></div>
+                </td>
+                <td><div class="tooltip">Library<span class="tooltiptext"><p>Duration: 55min</p></span></div></td>
+                <td><div class="tooltip">Python/ML<span class="tooltiptext"><p>Teacher: Mr. Deepak S Rana</p><p>Duration: 55min</p><p>Class Room: 507</p></span></div>
+                </td>
+                <td><div class="tooltip">Engineering Chemistry Theory<span class="tooltiptext"><p>Teacher: Dr. Kapil Ghai</p><p>Duration: 55min</p><p>Subject Code: TCH101</p><p>Class Room: 503</p></span></div>
+                </td>
+            </tr>
+            <tr>
+                <td>12:00 PM - 01:00PM</td>
+                <td colspan="6">LUNCH</td>
+            </tr>
+            <tr>
+                <td>01:00 PM - 01:55 PM</td>
+                <td rowspan="2"><div class="tooltip">Electronics Engineering Lab(G1)<br>Professional Communication Lab(G2)<span class="tooltiptext"><p>Teacher: Mr. Prabhat/Dr. Vinay Devrani</p><p>Duration: 1hr 50min</p><p>Subject Code: PEC101/PHU101</p><p>Class Room: 507</p></span></div>
+                </td>
+                <td rowspan="2"><div class="tooltip">Professional Communication Lab(G1)<br>Electronics Engineering Lab(G2)<span class="tooltiptext"><p>Teacher: Dr. Vinay Devrani/Mr. Prabhat</p><p>Duration: 1hr 50min</p><p>Subject Code: PHU101/PEC101</p><p>Class Room: 507</p></span></div>
+                </td>
+                <td rowspan="3"><div class="tooltip">Engineering Graphics Lab<span class="tooltiptext"><p>Teacher: Ms. R Taluja</p><p>Duration: 3hr 05min</p><p>Subject Code: PME153</p><p>Class Room: LAB-5</p></span></div></td>
+                <td><div class="tooltip">Engineering Mathematics Theory<span class="tooltiptext"><p>Teacher: Dr. Neeraj Dhiman</p><p>Duration: 55min</p><p>Subject Code: TMA101</p><p>Class Room: 507</p></span></div></td>
+                <td><div class="tooltip">Engineering Mathematics Theory<span class="tooltiptext"><p>Teacher: Dr. Neeraj Dhiman</p><p>Duration: 55min</p><p>Subject Code: TMA101</p><p>Class Room: 507</p></span></div></td>
+                <td rowspan="3"><div class="tooltip">Computer Lab<span class="tooltiptext"><p>Teacher: Mr. Deepak S Rana</p><p>Duration: 3hr 05min</p><p>Subject Code: PCS151</p><p>Class Room: LAB-1</p></span></div></td>
+            </tr>    
+            <tr>
+                <td>01:55 PM - 02:50 PM</td>
+                <td><div class="tooltip">Senior Interaction<span class="tooltiptext"><p>Duration: 55min</p><p>Class Room: 504</p></span></div></td>
+                <td></td>
+            </tr>        
+            <tr>
+                <td>03:10 PM - 04:05 PM</td>
+                <td rowspan="2"><div class="tooltip">Chemistry Lab(G1)<br>Manual Drawing(G2)<span class="tooltiptext"><p>Teacher: Dr. Kapil Ghai/Mr. Tarun Dhiman</p><p>Duration: 1hr 50min</p><p>Subject Code: PCH151/PMD101</p></span></div></td>
+                <td rowspan="2"></td>
+                <td></td>
+                <td ROWSPAN="2"><div class="tooltip">Manual Drawing(G1)<br>Chemistry Lab(G2)<span class="tooltiptext"><p>Teacher: Mr. Tarun Dhiman/Dr. Kapil Ghai</p><p>Duration: 1hr 50min</p><p>Subject Code: PMD101/PCH151</p></span></div></td>
+            </tr>   
+            <tr>
+                <td>04:05 PM - 05:00 PM</td>
+                <td><div class="tooltip">Career Skills<span class="tooltiptext"><p>Teacher: Mr. Akash Chauhan</p><p>Duration: 55min</p><p>Subject Code: CEC</p><p>Class Room: 504</p></span></div></td>
+                <td><div class="tooltip">Career Skills<span class="tooltiptext"><p>Teacher: Mr. Akash Chauhan</p><p>Duration: 55min</p><p>Subject Code: CEC</p><p>Class Room: 504</p></span></div></td>
+                <td></td>
+            </tr>    
+        </table>
+    </div>
+</body>
+</html>
